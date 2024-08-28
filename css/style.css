@@ -8,6 +8,7 @@
 body{
 	font-family: 'Poppins' , sans-serif;
 }
+
 header {
 	height: 100px;
 	background-color: #00072d;
@@ -27,13 +28,55 @@ header {
 	font-weight: 600;
 }
 
-.menu a{
-	color: white;
-	text-transform: uppercase;
-	text-decoration: none;
-	padding: 0 10px;
-	transition: 0.4s;
+
+.menu {
+    position: relative;
+    padding: 10px;
 }
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+    background-color: #00072d;
+    border: 1px solid #00072d;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    z-index: 1000;
+	width: 150px;
+}
+
+.menu ul li {
+    margin: 0;
+}
+
+.menu ul a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu ul a:hover {
+    background-color: #00fff249;
+}
+
+.menu .hamburguesa {
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
 
 .mostrar-menu,
 .esconder-menu{
@@ -243,6 +286,8 @@ footer{
 	text-align: center;
 	color: #00072d;
 }
+
+
 
 
   .portfolio-experiment a {
